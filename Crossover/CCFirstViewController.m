@@ -21,7 +21,7 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
     
-    [[CCDribbbleAPI sharedAPI] getShotsForList:CCDribbbleListTypePopular withCompletionBlock:^(NSArray *shotsArray) {
+    [[CCDribbbleAPI sharedAPI] getShotsForList:DribbbleListTypeEveryone withCompletionBlock:^(NSArray *shotsArray) {
         
     }];
 }

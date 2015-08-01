@@ -8,8 +8,17 @@
 
 #import <UIKit/UIKit.h>
 
+#import "CCPopularShotsViewController.h"
+#import "CCFirstViewController.h"
+
 @interface CCAppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
+
+@property (strong, nonatomic) UITabBarController *tabBarController;
+@property (strong, nonatomic) UINavigationController *popularShotsNavigationController;
+@property (strong, nonatomic) CCPopularShotsViewController *popularShotsViewController;
+
+@property (strong, nonatomic) CCFirstViewController *firstViewController;
 
 @end

@@ -14,10 +14,7 @@
 		9FD32B331876F5D400E67BB9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9FD32B311876F5D400E67BB9 /* InfoPlist.strings */; };
 		9FD32B351876F5D400E67BB9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FD32B341876F5D400E67BB9 /* main.m */; };
 		9FD32B391876F5D400E67BB9 /* CCAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FD32B381876F5D400E67BB9 /* CCAppDelegate.m */; };
-		9FD32B3C1876F5D400E67BB9 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9FD32B3A1876F5D400E67BB9 /* Main_iPhone.storyboard */; };
-		9FD32B3F1876F5D400E67BB9 /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9FD32B3D1876F5D400E67BB9 /* Main_iPad.storyboard */; };
 		9FD32B421876F5D400E67BB9 /* CCFirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FD32B411876F5D400E67BB9 /* CCFirstViewController.m */; };
-		9FD32B451876F5D400E67BB9 /* CCSecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FD32B441876F5D400E67BB9 /* CCSecondViewController.m */; };
 		9FD32B471876F5D400E67BB9 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9FD32B461876F5D400E67BB9 /* Images.xcassets */; };
 		9FD32B4E1876F5D400E67BB9 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FD32B4D1876F5D400E67BB9 /* XCTest.framework */; };
 		9FD32B4F1876F5D400E67BB9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FD32B281876F5D400E67BB9 /* Foundation.framework */; };
@@ -25,6 +22,14 @@
 		9FD32B581876F5D400E67BB9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9FD32B561876F5D400E67BB9 /* InfoPlist.strings */; };
 		9FD32B5A1876F5D400E67BB9 /* CrossoverTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FD32B591876F5D400E67BB9 /* CrossoverTests.m */; };
 		9FD32B66187726C400E67BB9 /* CCDribbbleAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FD32B65187726C400E67BB9 /* CCDribbbleAPI.m */; };
+		9FD32B7B1878B62E00E67BB9 /* DribbbleShot.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FD32B7A1878B62E00E67BB9 /* DribbbleShot.m */; };
+		9FD32B7E1878B80300E67BB9 /* DribbblePlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FD32B7D1878B80300E67BB9 /* DribbblePlayer.m */; };
+		9FD32B811878CE3500E67BB9 /* CCPopularShotsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FD32B801878CE3500E67BB9 /* CCPopularShotsViewController.m */; };
+		9FD32B841879811A00E67BB9 /* CCImageCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FD32B831879811A00E67BB9 /* CCImageCollectionViewCell.m */; };
+		9FD32B871879882F00E67BB9 /* placeholderimage.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9FD32B851879882F00E67BB9 /* placeholderimage.jpg */; };
+		9FD32B881879882F00E67BB9 /* placeholderimage@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9FD32B861879882F00E67BB9 /* placeholderimage@2x.jpg */; };
+		9FD32B8C187997E700E67BB9 /* ShotCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FD32B8A187997E700E67BB9 /* ShotCell.m */; };
+		9FD32B8D187997E700E67BB9 /* ShotCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9FD32B8B187997E700E67BB9 /* ShotCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,12 +55,8 @@
 		9FD32B361876F5D400E67BB9 /* Crossover-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Crossover-Prefix.pch"; sourceTree = "<group>"; };
 		9FD32B371876F5D400E67BB9 /* CCAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CCAppDelegate.h; sourceTree = "<group>"; };
 		9FD32B381876F5D400E67BB9 /* CCAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CCAppDelegate.m; sourceTree = "<group>"; };
-		9FD32B3B1876F5D400E67BB9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
-		9FD32B3E1876F5D400E67BB9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
 		9FD32B401876F5D400E67BB9 /* CCFirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CCFirstViewController.h; sourceTree = "<group>"; };
 		9FD32B411876F5D400E67BB9 /* CCFirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CCFirstViewController.m; sourceTree = "<group>"; };
-		9FD32B431876F5D400E67BB9 /* CCSecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CCSecondViewController.h; sourceTree = "<group>"; };
-		9FD32B441876F5D400E67BB9 /* CCSecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CCSecondViewController.m; sourceTree = "<group>"; };
 		9FD32B461876F5D400E67BB9 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		9FD32B4C1876F5D400E67BB9 /* CrossoverTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CrossoverTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9FD32B4D1876F5D400E67BB9 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
@@ -64,6 +65,19 @@
 		9FD32B591876F5D400E67BB9 /* CrossoverTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CrossoverTests.m; sourceTree = "<group>"; };
 		9FD32B64187726C400E67BB9 /* CCDribbbleAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCDribbbleAPI.h; sourceTree = "<group>"; };
 		9FD32B65187726C400E67BB9 /* CCDribbbleAPI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCDribbbleAPI.m; sourceTree = "<group>"; };
+		9FD32B791878B62E00E67BB9 /* DribbbleShot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DribbbleShot.h; sourceTree = "<group>"; };
+		9FD32B7A1878B62E00E67BB9 /* DribbbleShot.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DribbbleShot.m; sourceTree = "<group>"; };
+		9FD32B7C1878B80300E67BB9 /* DribbblePlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DribbblePlayer.h; sourceTree = "<group>"; };
+		9FD32B7D1878B80300E67BB9 /* DribbblePlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DribbblePlayer.m; sourceTree = "<group>"; };
+		9FD32B7F1878CE3500E67BB9 /* CCPopularShotsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCPopularShotsViewController.h; sourceTree = "<group>"; };
+		9FD32B801878CE3500E67BB9 /* CCPopularShotsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCPopularShotsViewController.m; sourceTree = "<group>"; };
+		9FD32B821879811A00E67BB9 /* CCImageCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCImageCollectionViewCell.h; sourceTree = "<group>"; };
+		9FD32B831879811A00E67BB9 /* CCImageCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCImageCollectionViewCell.m; sourceTree = "<group>"; };
+		9FD32B851879882F00E67BB9 /* placeholderimage.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = placeholderimage.jpg; sourceTree = "<group>"; };
+		9FD32B861879882F00E67BB9 /* placeholderimage@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "placeholderimage@2x.jpg"; sourceTree = "<group>"; };
+		9FD32B89187997E700E67BB9 /* ShotCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShotCell.h; sourceTree = "<group>"; };
+		9FD32B8A187997E700E67BB9 /* ShotCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShotCell.m; sourceTree = "<group>"; };
+		9FD32B8B187997E700E67BB9 /* ShotCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ShotCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,17 +140,22 @@
 		9FD32B2E1876F5D400E67BB9 /* Crossover */ = {
 			isa = PBXGroup;
 			children = (
+				9FD32B89187997E700E67BB9 /* ShotCell.h */,
+				9FD32B8A187997E700E67BB9 /* ShotCell.m */,
+				9FD32B8B187997E700E67BB9 /* ShotCell.xib */,
 				9FD32B63187726AE00E67BB9 /* API */,
 				9FD32B371876F5D400E67BB9 /* CCAppDelegate.h */,
 				9FD32B381876F5D400E67BB9 /* CCAppDelegate.m */,
-				9FD32B3A1876F5D400E67BB9 /* Main_iPhone.storyboard */,
-				9FD32B3D1876F5D400E67BB9 /* Main_iPad.storyboard */,
 				9FD32B401876F5D400E67BB9 /* CCFirstViewController.h */,
 				9FD32B411876F5D400E67BB9 /* CCFirstViewController.m */,
-				9FD32B431876F5D400E67BB9 /* CCSecondViewController.h */,
-				9FD32B441876F5D400E67BB9 /* CCSecondViewController.m */,
 				9FD32B461876F5D400E67BB9 /* Images.xcassets */,
 				9FD32B2F1876F5D400E67BB9 /* Supporting Files */,
+				9FD32B7F1878CE3500E67BB9 /* CCPopularShotsViewController.h */,
+				9FD32B801878CE3500E67BB9 /* CCPopularShotsViewController.m */,
+				9FD32B821879811A00E67BB9 /* CCImageCollectionViewCell.h */,
+				9FD32B831879811A00E67BB9 /* CCImageCollectionViewCell.m */,
+				9FD32B851879882F00E67BB9 /* placeholderimage.jpg */,
+				9FD32B861879882F00E67BB9 /* placeholderimage@2x.jpg */,
 			);
 			path = Crossover;
 			sourceTree = "<group>";
@@ -173,10 +192,22 @@
 		9FD32B63187726AE00E67BB9 /* API */ = {
 			isa = PBXGroup;
 			children = (
+				9FD32B781878B60E00E67BB9 /* Model */,
 				9FD32B64187726C400E67BB9 /* CCDribbbleAPI.h */,
 				9FD32B65187726C400E67BB9 /* CCDribbbleAPI.m */,
 			);
 			name = API;
+			sourceTree = "<group>";
+		};
+		9FD32B781878B60E00E67BB9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				9FD32B791878B62E00E67BB9 /* DribbbleShot.h */,
+				9FD32B7A1878B62E00E67BB9 /* DribbbleShot.m */,
+				9FD32B7C1878B80300E67BB9 /* DribbblePlayer.h */,
+				9FD32B7D1878B80300E67BB9 /* DribbblePlayer.m */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -229,6 +260,9 @@
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = "Cornelius Carl";
 				TargetAttributes = {
+					9FD32B241876F5D400E67BB9 = {
+						DevelopmentTeam = JD26ZWJ4WW;
+					};
 					9FD32B4B1876F5D400E67BB9 = {
 						TestTargetID = 9FD32B241876F5D400E67BB9;
 					};
@@ -258,10 +292,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9FD32B3F1876F5D400E67BB9 /* Main_iPad.storyboard in Resources */,
+				9FD32B871879882F00E67BB9 /* placeholderimage.jpg in Resources */,
 				9FD32B471876F5D400E67BB9 /* Images.xcassets in Resources */,
-				9FD32B3C1876F5D400E67BB9 /* Main_iPhone.storyboard in Resources */,
+				9FD32B881879882F00E67BB9 /* placeholderimage@2x.jpg in Resources */,
 				9FD32B331876F5D400E67BB9 /* InfoPlist.strings in Resources */,
+				9FD32B8D187997E700E67BB9 /* ShotCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -313,11 +348,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9FD32B841879811A00E67BB9 /* CCImageCollectionViewCell.m in Sources */,
 				9FD32B66187726C400E67BB9 /* CCDribbbleAPI.m in Sources */,
-				9FD32B451876F5D400E67BB9 /* CCSecondViewController.m in Sources */,
+				9FD32B8C187997E700E67BB9 /* ShotCell.m in Sources */,
+				9FD32B811878CE3500E67BB9 /* CCPopularShotsViewController.m in Sources */,
 				9FD32B391876F5D400E67BB9 /* CCAppDelegate.m in Sources */,
+				9FD32B7B1878B62E00E67BB9 /* DribbbleShot.m in Sources */,
 				9FD32B421876F5D400E67BB9 /* CCFirstViewController.m in Sources */,
 				9FD32B351876F5D400E67BB9 /* main.m in Sources */,
+				9FD32B7E1878B80300E67BB9 /* DribbblePlayer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -346,22 +385,6 @@
 				9FD32B321876F5D400E67BB9 /* en */,
 			);
 			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		9FD32B3A1876F5D400E67BB9 /* Main_iPhone.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				9FD32B3B1876F5D400E67BB9 /* Base */,
-			);
-			name = Main_iPhone.storyboard;
-			sourceTree = "<group>";
-		};
-		9FD32B3D1876F5D400E67BB9 /* Main_iPad.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				9FD32B3E1876F5D400E67BB9 /* Base */,
-			);
-			name = Main_iPad.storyboard;
 			sourceTree = "<group>";
 		};
 		9FD32B561876F5D400E67BB9 /* InfoPlist.strings */ = {
@@ -455,10 +478,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Crossover/Crossover-Prefix.pch";
 				INFOPLIST_FILE = "Crossover/Crossover-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -469,10 +495,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Crossover/Crossover-Prefix.pch";
 				INFOPLIST_FILE = "Crossover/Crossover-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

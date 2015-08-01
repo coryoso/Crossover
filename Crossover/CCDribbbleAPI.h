@@ -9,15 +9,15 @@
 #import <Foundation/Foundation.h>
 
 typedef enum {
-    CCDribbbleListTypeDebuts,
-    CCDribbbleListTypeEveryOne,
-    CCDribbbleListTypePopular = 0
-} CCDribbbleListType;
+    DribbbleListTypeDebuts,
+    DribbbleListTypeEveryone,
+    DribbbleListTypePopular = 0
+} DribbbleListType;
 
 @interface CCDribbbleAPI : NSObject
 
 + (instancetype)sharedAPI;
 
-- (void)getShotsForList:(CCDribbbleListType)listType withCompletionBlock:(void (^)(NSArray *shotsArray))completionBlock;
+- (void)getShotsForList:(DribbbleListType)listType withCompletionBlock:(void (^)(NSArray *shotsArray))completionBlock;
 
 @end

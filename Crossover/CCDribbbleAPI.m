@@ -9,6 +9,9 @@
 #import "CCDribbbleAPI.h"
 #import "JSONKit.h"
 
+#import "DribbbleShot.h"
+#import "DribbblePlayer.h"
+
 @interface CCDribbbleAPI ()
 {
     NSString *baseURLString;
@@ -39,19 +42,45 @@
     return self;
 }
 
-- (void)getShotsForList:(CCDribbbleListType)listType withCompletionBlock:(void (^)(NSArray *))completionBlock
+- (void)getShotsForList:(DribbbleListType)listType withCompletionBlock:(void (^)(NSArray *shotsArray))completionBlock
 {
     NSMutableString *additionString = [NSMutableString stringWithString:@"shots/"];
-    if (listType == CCDribbbleListTypePopular) {
+    if (listType == DribbbleListTypePopular) {
         [additionString appendString:@"popular"];
-    } else if (listType == CCDribbbleListTypeDebuts) {
+    } else if (listType == DribbbleListTypeDebuts) {
         [additionString appendString:@"debuts"];
     } else {
         [additionString appendString:@"everyone"];
     }
     
     [self performRequestForURL:additionString andCallback:^(NSDictionary *returnDictionary, NSError *error) {
-        NSLog(@"%@", returnDictionary);
+        //TODO pagination
+         NSMutableArray *mutableShotsArray = [NSMutableArray new];
+        [returnDictionary[@"shots"] enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
+            NSDictionary *currentExternalShot = obj;
+            DribbbleShot *shot = [DribbbleShot new];
+            shot.identifier = [currentExternalShot[@"id"] integerValue];
+            shot.title = currentExternalShot[@"title"];
+            shot.URL = [NSURL URLWithString:currentExternalShot[@"url"]]; //TODO @2x
+            shot.shortURL = [NSURL URLWithString:currentExternalShot[@"short_url"]];
+            shot.imageURL = [NSURL URLWithString:currentExternalShot[@"image_url"]];
+            shot.viewsCount = [currentExternalShot[@"views_count"] integerValue];
+            shot.likesCount = [currentExternalShot[@"likes_count"] integerValue];
+            shot.reboundsCount = [currentExternalShot[@"rebounds_count"] integerValue];
+            NSLog(@"%@", currentExternalShot[@"image_url"]);
+            if (currentExternalShot[@"rebounds_source_id"]) {
+            if (![currentExternalShot[@"rebound_source_id"] isEqualToString:@"<null>"]) {
+                shot.reboundsSourceIdentifier = [currentExternalShot[@"rebound_source_id"] integerValue];
+            }
+            }
+            NSDateFormatter *dateFormatter = [NSDateFormatter new];
+            [dateFormatter setDateFormat:@"yyyy/MM/dd HH:mm:ss ZZZ"];
+            shot.creationDate = [dateFormatter dateFromString:currentExternalShot[@"created_at"]];
+            
+            [mutableShotsArray addObject:shot];
+        }];
+        NSArray *resultArray = mutableShotsArray;
+        completionBlock(resultArray);
     }];
 }
 

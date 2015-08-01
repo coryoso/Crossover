@@ -13,6 +13,19 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+    
+    UICollectionViewFlowLayout *layout = [UICollectionViewFlowLayout new];
+    self.popularShotsViewController = [[CCPopularShotsViewController alloc] initWithCollectionViewLayout:layout];
+    self.popularShotsNavigationController = [[UINavigationController alloc] initWithRootViewController:self.popularShotsViewController];
+    
+    self.firstViewController = [CCFirstViewController new];
+    
+    self.tabBarController = [UITabBarController new];
+    self.tabBarController.viewControllers = @[self.popularShotsNavigationController];
+    
+    self.window.rootViewController = self.tabBarController;
+    [self.window makeKeyAndVisible];
     return YES;
 }
 							
